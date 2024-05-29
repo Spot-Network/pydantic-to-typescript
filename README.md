@@ -8,8 +8,23 @@ A simple CLI tool for converting pydantic models into typescript interfaces. Use
 
 This tool requires that you have the lovely json2ts CLI utility installed. Instructions can be found here: https://www.npmjs.com/package/json-schema-to-typescript
 
+
+### Fork note
+The current version of this library is not working with pydantic V2, which we are using at Spot. There was a PR with a fix but no one to merge it. This fork fixes the issue. Thank you [@goncaloflf](https://github.com/goncaloflf).
+
 ### Installation
 
+**Based installation for the fork version**
+
+After cloning the repo run these commands inside:
+
+```bash
+$ pip install -e .
+$ python setup.py build
+$ python setup.py install
+```
+
+**Casual installation for the original version**
 ```bash
 $ pip install pydantic-to-typescript
 ```
